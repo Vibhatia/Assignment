@@ -1,17 +1,15 @@
 .card-title {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     height: fit-content;
-
+    justify-content: space-between;
 }
 
 .card-title-left {
     display: flex;
     justify-content: center;
-    margin-left: 15px;
     align-items: center;
-
+    margin-left: 15px;
 }
 
 .card-title-left img {
@@ -35,23 +33,20 @@
 }
 
 .card-title-right {
-    flex-direction: row;
     display: flex;
-
+    flex-direction: row;
 }
 
 .card-title-right-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: none;
     border: none;
     border-radius: 20px;
-    background: none;
-
+    outline: none;
     padding: 5px;
     cursor: pointer;
-    outline: none;
-
     transition: 0.5s;
 }
 

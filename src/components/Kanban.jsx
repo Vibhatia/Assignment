@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './styles/Kanban.css'
 import Navbar from './Navbar';
 import Title from './Title';
-// import Card from './Card';
+import Card from './Card';
 import Order from './Order';
 import DATA from './getItems'
 
@@ -35,9 +35,9 @@ function Kanban() {
             return(
                 <div className='group-column'>
                 <Title title={group.title} grouping={grouping} count={group.tickets.length} available={grouping === 'user' ? DATA.users.filter(e => e.name === group.title)[0].available : null}/>
-                {/* {Order(group.tickets, ordering).map(item => {
+                {Order(group.tickets, ordering).map(item => {
                     return <Card ticket={item} grouping={grouping} user={DATA.users.filter(e => e.id === item.userId)[0]} />
-                })} */}
+                })}
                 </div>
             )})}
         </div>
