@@ -1,6 +1,6 @@
 import React from 'react'
 import Tag from './Tag'
-import getImageSrc from './getImageSrc'
+import getImage from './getImage'
 import './styles/Card.css'
 
 const doneIcon = '/icons/status/Todo.svg'

@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Title from './Title';
 import Card from './Card';
 import Order from './Order';
-import DATA from './getItems'
+import DATA from './extractItems'
 
 function Kanban() {
     const [grouping, setGrouping] = useState(localStorage.getItem('grouping') || 'status');
